@@ -9,7 +9,8 @@ list_map = [
     [2, 0, 4, 2]
 ]
 
-list_merge =[2,0,2,0]
+list_merge = [2, 0, 2, 0]
+
 
 def zero_to_end():
     """
@@ -37,15 +38,16 @@ def merge():
 def move_left():
     global list_merge
     for line in list_map:
-        list_merge=line
+        list_merge = line
         merge()
+
 
 def move_right():
     global list_merge
     for line in list_map:
         list_merge = line[::-1]
         merge()
-        line[::-1]=list_merge
+        line[::-1] = list_merge
 
 
 merge()
